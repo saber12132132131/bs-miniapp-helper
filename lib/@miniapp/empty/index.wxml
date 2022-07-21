@@ -1,0 +1,6 @@
+<!--components/empty/empty.wxml-->
+<view class="empty">
+           <image class="emptyIcon" src="https://520project-1253704283.cos.ap-nanjing.myqcloud.com/icon/no_friend.png"></image>
+           <view class="fristMessage">{{description}}</view>
+           <!-- <view class="fsecondMessage">快去首页寻找良缘把~</view> -->
+</view>

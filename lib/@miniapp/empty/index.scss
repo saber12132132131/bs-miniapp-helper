@@ -1,0 +1,25 @@
+/* components/empty/empty.wxss */
+
+.empty {
+  margin-top: 250rpx;
+  display: flex;
+  width: 750rpx;
+  height: 300rpx;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 30rpx;
+  font-family: PingFang;
+  font-weight: 500;
+
+
+  color: #838383;
+  
+}
+
+.empty .emptyIcon {
+  width: 142rpx;
+  height: 142rpx;
+}
+
