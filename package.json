@@ -1,12 +1,13 @@
 {
   "name": "bs-miniapp-helper",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "一个 小程序 组件开发库",
   "type": "commonjs",
   "miniprogram": "dist",
   "scripts": {},
   "files": [
-    "lib"
+    "lib",
+    "dist"
   ],
   "keywords": [],
   "author": "SaberGe",
@@ -17,18 +18,16 @@
     "cssnano": "^5.1.12",
     "ejs": "^3.1.8",
     "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-ejs": "^5.1.0",
     "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.1.0",
     "gulp-scss": "^1.4.0",
     "gulp-watch": "^5.0.1",
     "minimist": "^1.2.6",
     "sass": "^1.53.0",
     "scss": "^0.2.4"
-  },
-  "dependencies": {
-    "gulp-babel": "^8.0.0",
-    "gulp-rename": "^2.0.0"
   }
 }
