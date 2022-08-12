@@ -1,2 +1,5 @@
 <!--pages/demo/demo.wxml-->
-<demo></demo>
+<demo swipe="{{true}}">
+   <view slot="top" class="top">12121</view>
+
+</demo>

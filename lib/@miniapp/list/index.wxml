@@ -1,0 +1,20 @@
+<view class="container">
+
+  <block wx:if="{{swipe}}">
+    <!-- 使用Swiper 一定是多tab页面  -->
+     <view class="top custom-top" >
+        <slot name="top"></slot>
+     </view>
+     <swiper class="swiper" style="height:{{containerHeight}}px;">
+        <swiper-item class="swiper-item">
+           <scroll-view scroll-y class="scroll-view">
+              
+           </scroll-view>
+        </swiper-item>
+     </swiper>
+  </block>
+  <block wx:else="{{swipe}}">
+    <!-- 不使用Swiper  -->
+     
+  </block>
+</view>
