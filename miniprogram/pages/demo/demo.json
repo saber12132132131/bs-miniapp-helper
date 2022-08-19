@@ -1,5 +1,6 @@
 {
     "usingComponents": {
-      "demo":"../../components/list/index"
+      "demo":"../../components/list/index",
+      "index":"../../components/index/index"
     }
 }

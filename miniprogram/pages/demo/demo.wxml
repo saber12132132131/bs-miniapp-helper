@@ -1,5 +1,5 @@
 <!--pages/demo/demo.wxml-->
-<demo swipe="{{true}}">
-   <view slot="top" class="top">12121</view>
+<demo  generic:item="index"  apiConfig="{{apiConfig}}" params="{{params}}" description="tst" swipe="{{true}}">
+   <!-- <view slot="top" class="top">12121</view> -->
 
 </demo>

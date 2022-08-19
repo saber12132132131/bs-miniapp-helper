@@ -1,4 +1,9 @@
 {
   "component": true,
-  "usingComponents": {}
+  "usingComponents": {
+    "empty":"../empty/index"
+  },
+  "componentGenerics": {
+    "item":true
+  }
 }

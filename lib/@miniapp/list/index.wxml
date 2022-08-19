@@ -1,20 +1,32 @@
 <view class="container">
 
-  <block wx:if="{{swipe}}">
-    <!-- 使用Swiper 一定是多tab页面  -->
-     <view class="top custom-top" >
-        <slot name="top"></slot>
-     </view>
-     <swiper class="swiper" style="height:{{containerHeight}}px;">
-        <swiper-item class="swiper-item">
-           <scroll-view scroll-y class="scroll-view">
-              
-           </scroll-view>
-        </swiper-item>
-     </swiper>
-  </block>
-  <block wx:else="{{swipe}}">
-    <!-- 不使用Swiper  -->
-     
-  </block>
+   <block wx:if="{{swipe}}">
+      <!-- 使用Swiper 一定是多tab页面  -->
+      <view class="top custom-top">
+         <slot name="top"></slot>
+      </view>
+      <swiper class="swiper" style="height:{{containerHeight}}px;">
+         <swiper-item class="swiper-item">
+            <scroll-view enable-flex scroll-y class="scroll-view custom-container" 	bindscrolltolower="handlelower">
+               <block wx:if="{{list.length>0}}" wx:for="{{list}}">
+                  <item></item>
+               </block>
+               <block wx:if="{{list.length==0}}">
+                  <empty description="{{description}}"></empty>
+               </block>
+            </scroll-view>
+         </swiper-item>
+      </swiper>
+   </block>
+   <block wx:else="{{swipe}}">
+      <scroll-view enable-flex scroll-y class="scroll-view custom-container" 	bindscrolltolower="handlelower">
+         <block wx:if="{{list.length>0}}" wx:for="{{list}}">
+            <item></item>
+         </block>
+         <block wx:if="{{list.length==0}}">
+            <empty description="{{description}}"></empty>
+         </block>
+      </scroll-view>
+
+   </block>
 </view>

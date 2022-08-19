@@ -5,7 +5,14 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+     apiFn:wx.request,
+     apiConfig:{
+       url:"https://www.baidu.com",
+       method:"get"
+     },
+     params:{
+       "sds":13212
+     }
   },
 
   /**

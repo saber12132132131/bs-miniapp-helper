@@ -5,13 +5,15 @@
   .swiper{
     .swiper-item{
       height: 100%;
-      .scroll-view{
-        height: 100%;
-        background-color: aquamarine;
-      }
     }
   }
 
+}
+.scroll-view{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .item{
   height: 200rpx;
