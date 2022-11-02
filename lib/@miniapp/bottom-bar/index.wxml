@@ -1,0 +1,14 @@
+<!-- components/bottom-bar/botttom-bar.wxml -->
+<view class="bottom-bar">
+  <view class="left" style="width:{{rightSlot?'':'100%'}}">
+    <block wx:for="{{iconList}}" wx:key="index">
+      <view bindtap="handleTap" data-index="{{index}}" class="item custom-item">
+        <image class="icon" src="{{item.icon}}" mode="aspectFill"></image>
+        <view class="desc">{{item.title}}</view>
+      </view>
+    </block>
+  </view>
+  <view wx:if="{{rightSlot}}" class="right">
+    <slot></slot>
+  </view>
+</view>

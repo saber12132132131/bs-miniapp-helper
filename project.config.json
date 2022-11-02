@@ -36,9 +36,22 @@
     "disableUseStrict": false,
     "minifyWXML": true,
     "showES6CompileOption": false,
-    "useCompilerPlugins": false
+    "useCompilerPlugins": false,
+    "ignoreDevUnusedFiles": false,
+    "ignoreUploadUnusedFiles": false
   },
   "appid": "wxf15d3e2216983293",
   "projectname": "bs-miniapp-helper",
-  "condition": {}
+  "condition": {},
+  "compileType": "miniprogram",
+  "libVersion": "2.27.0",
+  "srcMiniprogramRoot": "miniprogram/",
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "editorSetting": {
+    "tabIndent": "insertSpaces",
+    "tabSize": 2
+  }
 }

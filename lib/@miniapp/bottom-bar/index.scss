@@ -1,0 +1,40 @@
+.bottom-bar {
+    position: fixed;
+    bottom: 0;
+    width: 750rpx;
+    left: 0rpx;
+    height: 100rpx;
+    border-top: 1px solid #c7c7c7;
+    background-color: #fff;
+    display: flex;
+    padding: 0 25rpx;
+    box-sizing: border-box;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    width: 100rpx;
+    align-items: center;
+    font-size: 24rpx;
+    color: #848484;
+    margin: 0 20rpx;
+}
+
+.left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    justify-content: space-evenly;
+}
+
+.item .icon {
+    width: 44rpx;
+    height: 44rpx;
+}
+
+.right {
+    margin-left: 25rpx;
+    flex: 1;
+}

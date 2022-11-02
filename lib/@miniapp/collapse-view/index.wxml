@@ -1,0 +1,15 @@
+<!-- components/collapse-view/collapse-view.wxml -->
+<view bintap="collapse">
+  <view wx:if="{{isCollapse}}" style="{{lineStyle}}" class="warp class">
+    <view class="warp-item" style="{{lineStyle}};color:{{showEllipsis?'inherit':'white'}}">
+      <view style="{{inlineBlockStyle}}" class="inline-block">T</view>
+      <slot></slot>
+    </view>
+  </view>
+  <view class="class" wx:else>
+    <slot></slot>
+  </view>
+  <!-- <view wx:if="{{showSwitch}}" class="bottom">
+    <open-close close="{{!isCollapse}}" bindclick="handleClick"></open-close>
+  </view> -->
+</view>

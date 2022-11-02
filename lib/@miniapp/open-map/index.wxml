@@ -1,0 +1,5 @@
+<!-- components/open-map/open-map.wxml -->
+<view bindtap="openMapApp">
+  <map id="myMap" style="width: 0.5px; height: 0.5px;" show-location></map>
+  <slot></slot>
+</view>

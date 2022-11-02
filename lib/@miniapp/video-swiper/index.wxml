@@ -1,0 +1,15 @@
+<!-- components/video-swiper.wxml -->
+<view class="custom-class">
+  <swiper class="swiper" circular easing-function="{{easingFunction}}" current="{{current}}" duration="{{duration}}" bindchange="change" indicator-color="{{indicatorColor}}" indicator-active-color="{{indicatorActiveColor}}" indicator-dots autoplay>
+    <block wx:for="{{srcList}}" wx:key="index">
+      <swiper-item class="swiper-item" bindtap="handleClick" data-index="{{index}}">
+        <block wx:if="{{item.type=='VIDEO'}}">
+          <video id="video_{{index}}" class="src_item" loop="{{loop}}" autoplay="{{autoplay}}" enable-play-gesture enable-progress-gesture="{{false}}" show-center-play-btn="{{false}}" controls="{{controls}}" poster="{{item.imageUrl}}" src="{{item.videoUrl}}" data-id="{{item.id}}" object-fit="{{item.objectFit || 'cover'}}" data-index="{{index}}" bindended="onEnded" />
+        </block>
+        <block wx:else>
+          <image class="src_item" mode="aspectFill" lazy-load src="{{item.imageUrl}}"></image>
+        </block>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

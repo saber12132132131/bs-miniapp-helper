@@ -1,0 +1,8 @@
+<view class="bottom">
+  <block wx:for="{{iconList}}" wx:key="index">
+    <view bindtap="goOther" data-item="{{item}}" class="icon-container">
+      <image class="img" src="{{item.icon}}"></image>
+      <view class="desc">{{item.desc}}</view>
+    </view>
+  </block>
+</view>

@@ -1,10 +1,13 @@
 {
   "name": "bs-miniapp-helper",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "一个 小程序 组件开发库",
   "type": "commonjs",
   "miniprogram": "dist",
-  "scripts": {},
+  "scripts": {
+    "dev": "gulp dev",
+    "dist": "gulp dist"
+  },
   "files": [
     "lib",
     "dist"

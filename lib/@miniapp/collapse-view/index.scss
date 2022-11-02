@@ -1,0 +1,33 @@
+/* components/collapse-view/collapse-view.wxss */
+.collapse {
+    position: relative;
+}
+
+.warp {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    white-space: normal;
+    /* -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical; */
+    visibility: hidden;
+
+}
+
+.warp .warp-item {
+    height: fit-content;
+    box-shadow: 1px 1px 1px white;
+}
+
+.bottom {
+    margin: 20rpx auto;
+    display: flex;
+    justify-content: center;
+}
+
+.inline-block {
+    height: auto;
+    display: inline-block;
+    background-color: #ddd;
+}

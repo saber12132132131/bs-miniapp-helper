@@ -7,7 +7,7 @@ const cleaner = (path) => function clean() { return exec(`npx rimraf ${path}`); 
 const libPath = resolve("../../lib")
 const miniprogramPath = resolve("../../miniprogram")
 const miniappPath = resolve("../../lib/@miniapp")
-const distPath = resolve("../../dist")
+const distPath = resolve("../../dist/@miniapp")
 const templatePath = resolve("../../template")
 // const copier = (dist,ext) =>
 //   function copy() {
@@ -17,9 +17,9 @@ const templatePath = resolve("../../template")
 //       .pipe(gulp.dest(dist));
 //   };
 const copier = function (ext) {
-  return function  (dist) {
-    return function copier () {
-   
+  return function (dist) {
+    return function copier() {
+
       const src = `${miniappPath}\\**\\*.${ext}`
       return gulp
         .src(src)

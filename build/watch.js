@@ -12,20 +12,21 @@ var knownOptions = {
   default: "empty"
 };
 var options = minimist(process.argv.slice(2), knownOptions);
-const dejsonComplier = tempComplier(`${templatePath}\\demoJsonTemp.ejs`, { compName: options.test||'empty'})
+console.log(options.test)
+const dejsonComplier = tempComplier(`${templatePath}\\demoJsonTemp.ejs`, { compName: options.test || 'empty' })
 
 const watch = gulp.parallel(
-  dejsonComplier(`${miniprogramPath}\\pages\\demo`,{basename:'demo',extname:'.json'}),
+  dejsonComplier(`${miniprogramPath}\\pages\\demo`, { basename: 'demo', extname: '.json' }),
   scssComplier(devDist),
   jsComplier(devDist),
   wxmlCopier(devDist),
   jsonCopier(devDist),
 )
-obs(`${templatePath}\\demoJsonTemp.ejs`,  dejsonComplier(`${miniprogramPath}\\pages\\demo`,{basename:'demo',extname:'.json'}))
-obs(`${miniappPath}\\**\\*.scss`,scssComplier(devDist))
-obs(`${miniappPath}\\**\\*.js`,jsComplier(devDist))
-obs(`${miniappPath}\\**\\*.wxml`,wxmlCopier(devDist))
-obs(`${miniappPath}\\**\\*.json`,jsonCopier(devDist))
+obs(`${templatePath}\\demoJsonTemp.ejs`, dejsonComplier(`${miniprogramPath}\\pages\\demo`, { basename: 'demo', extname: '.json' }))
+obs(`${miniappPath}\\**\\*.scss`, scssComplier(devDist))
+obs(`${miniappPath}\\**\\*.js`, jsComplier(devDist))
+obs(`${miniappPath}\\**\\*.wxml`, wxmlCopier(devDist))
+obs(`${miniappPath}\\**\\*.json`, jsonCopier(devDist))
 module.exports = {
   watch
 }

@@ -1,0 +1,29 @@
+/* components/icon-list/icon-list.wxss */
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.icon-container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 130rpx;
+    width: 100rpx;
+
+}
+
+.icon-container .img {
+    width: 80rpx;
+    height: 80rpx;
+
+}
+
+.icon-container .desc {
+    font-size: 24rpx;
+    font-family: PingFang;
+    color: #838383;
+}
